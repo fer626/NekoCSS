@@ -3,7 +3,15 @@
 
 :root {
   /* --width-data: 60px; */
-  --black-color: rgba(0, 0, 0, 70%); 
+  --primary-color: #458BFC;
+  --secondary-color: #45E2F2;
+  --warning-color: #F4BB6D;
+  --success-color: #48E981;
+  --error-color: #E9476F;
+  --white-color: rgba(255, 255, 255, 1);
+  --smoke-color: rgba(245, 245, 245, 1);
+  --black-color: rgba(0, 0, 0, 70%);
+  --border-radius: 5px;
   color: var(--black-color);
 }
 
@@ -59,4 +67,51 @@ code > .use{
 
 .class {
   background: green;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  padding: .75rem 1rem;
+  border-radius: var(--border-radius);
+  border-color: var(--smoke-color);
+  border-width: 1px;
+}
+
+.preview-color {
+  display: inline-block;
+  width: fit-content;
+  height: 3rem;
+  padding: 1rem;
+  margin: .25rem;
+  border-radius: var(--border-radius);
+  border:1px solid #ccc;
+}
+
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+.success {
+  background-color: var(--success-color);
+  color: var(--white-color);
+}
+.warning {
+  background-color: var(--warning-color);
+  color: var(--white-color);
+}
+.error {
+  background-color: var(--error-color);
+  color: var(--white-color);
+}
+.outline {
+  background-color: transparent;
+  color: var(--black-color);
+  border: none;
 }
