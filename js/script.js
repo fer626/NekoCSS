@@ -1,3 +1,0 @@
-((arg) => {
-    // alert('JS Loaded')
-})();

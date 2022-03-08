@@ -81,12 +81,61 @@ code > .use{
 
 .preview-color {
   display: inline-block;
-  width: fit-content;
-  height: 3rem;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
   padding: 1rem;
   margin: .25rem;
   border-radius: var(--border-radius);
   border:1px solid #ccc;
+}
+
+.subtitle-append-bottom,
+.subtitle-append-top {
+  position: absolute;
+  width: fit-content;
+  top: 100%;
+  left: 0;
+  color: #ccc;
+  font-size: .75rem;
+}
+
+.subtitle-append-bottom.center,
+.subtitle-append-top.center {
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+}
+.carousel .carousel-item {
+  position: absolute;
+  width: fit-content;
+  top: 0;
+  left: 0;
+}
+.carousel img {
+  width: 100%;
+}
+.carousel .carousel-controls {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-btn-next,
+.carousel-btn-prev {
+  width: 15vw;
+}
+
+.text-center {
+  text-align: center;
 }
 
 
@@ -96,7 +145,7 @@ code > .use{
 }
 .secondary {
   background-color: var(--secondary-color);
-  color: var(--black-color);
+  color: var(--white-color);
 }
 .success {
   background-color: var(--success-color);
