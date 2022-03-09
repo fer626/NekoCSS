@@ -7,10 +7,11 @@ class Carousel extends HTMLElement {
 
     const imgContainer = document.createElement('div')
     const btnContainer = document.createElement('div')
-    const btnNext = document.createElement('input', {
-      value: 'Next',
-      type: 'button'
-    })
+    const btnNext = document.createElement('button')
+    btnNetx.innerText = 'Next'
+    btnNext.innerHTML = 'Neext!'
+    btnNext.className = 'one'
+    btnNext.ClassName = 'two tree'
     const btnPrev = document.createElement('button')
 
     btnContainer.appendChild(btnNext)
